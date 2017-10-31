@@ -1,0 +1,25 @@
+{
+  "name": "lmf.weui.js",
+  "description": "weui.js",
+  "main": "./dist/weui.min.js",
+  "authors": [
+    "wechat ui team"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "weui",
+    "jquery",
+    "javascript",
+    "zepto",
+    "lmf"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
