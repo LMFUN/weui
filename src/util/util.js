@@ -304,14 +304,32 @@ objectAssign($.fn, {
             return formSerialize(form, true);
         }
         return {};
-
     }
-
 });
 
+var REG = {phone: /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$/};
+function _typeof(arg) {
+    return Object.prototype.toString.call(arg);
+}
 objectAssign($, {
     localStorage: localStorage,
     extend: objectAssign,
+    typeof: _typeof,
+    isArray: function (array) {
+        return _typeof(array) == '[object Array]';
+    },
+    isObject: function (object) {
+        return _typeof(object) == '[object Object]';
+    },
+    isPhone: function (phone) {
+        return REG.phone.test(phone);
+    },
+    date: function (...args) {
+        if (_typeof(args[0]) === '[object String]' && args[0].indexOf('-') >= 0) {
+            args[0] = args[0].replace(/-/g, '/');
+        }
+        return new Date(...args);
+    },
     /**
      * noop
      */

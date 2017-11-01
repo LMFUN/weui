@@ -1791,21 +1791,21 @@
 	    value: true
 	});
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; /*
-	                                                                                                                                                                                                                                                                               * Tencent is pleased to support the open source community by making WeUI.js available.
-	                                                                                                                                                                                                                                                                               *
-	                                                                                                                                                                                                                                                                               * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
-	                                                                                                                                                                                                                                                                               *
-	                                                                                                                                                                                                                                                                               * Licensed under the MIT License (the "License"); you may not use this file except in compliance
-	                                                                                                                                                                                                                                                                               * with the License. You may obtain a copy of the License at
-	                                                                                                                                                                                                                                                                               *
-	                                                                                                                                                                                                                                                                               *       http://opensource.org/licenses/MIT
-	                                                                                                                                                                                                                                                                               *
-	                                                                                                                                                                                                                                                                               * Unless required by applicable law or agreed to in writing, software distributed under the License is
-	                                                                                                                                                                                                                                                                               * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-	                                                                                                                                                                                                                                                                               * either express or implied. See the License for the specific language governing permissions and
-	                                                                                                                                                                                                                                                                               * limitations under the License.
-	                                                                                                                                                                                                                                                                               */
+	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; /*
+	                                                                                                                                                                                                                                                                                * Tencent is pleased to support the open source community by making WeUI.js available.
+	                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+	                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                * Licensed under the MIT License (the "License"); you may not use this file except in compliance
+	                                                                                                                                                                                                                                                                                * with the License. You may obtain a copy of the License at
+	                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                *       http://opensource.org/licenses/MIT
+	                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                * Unless required by applicable law or agreed to in writing, software distributed under the License is
+	                                                                                                                                                                                                                                                                                * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+	                                                                                                                                                                                                                                                                                * either express or implied. See the License for the specific language governing permissions and
+	                                                                                                                                                                                                                                                                                * limitations under the License.
+	                                                                                                                                                                                                                                                                                */
 
 	__webpack_require__(6);
 
@@ -2061,7 +2061,7 @@
 	    attr: function attr() {
 	        var _arguments3 = arguments;
 
-	        if (_typeof(arguments[0]) == 'object') {
+	        if (_typeof2(arguments[0]) == 'object') {
 	            var attrsObj = arguments[0];
 	            var that = this;
 	            Object.keys(attrsObj).forEach(function (attr) {
@@ -2088,7 +2088,7 @@
 	    data: function data() {
 	        var _arguments4 = arguments;
 
-	        if (_typeof(arguments[0]) == 'object') {
+	        if (_typeof2(arguments[0]) == 'object') {
 	            var attrsObj = arguments[0];
 	            var that = this;
 	            Object.keys(attrsObj).forEach(function (attr) {
@@ -2122,12 +2122,35 @@
 	        }
 	        return {};
 	    }
-
 	});
 
+	var REG = { phone: /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$/ };
+	function _typeof(arg) {
+	    return Object.prototype.toString.call(arg);
+	}
 	(0, _objectAssign2.default)(_balajs2.default, {
 	    localStorage: _localStorage2.default,
 	    extend: _objectAssign2.default,
+	    typeof: _typeof,
+	    isArray: function isArray(array) {
+	        return _typeof(array) == '[object Array]';
+	    },
+	    isObject: function isObject(object) {
+	        return _typeof(object) == '[object Object]';
+	    },
+	    isPhone: function isPhone(phone) {
+	        return REG.phone.test(phone);
+	    },
+	    date: function date() {
+	        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	            args[_key] = arguments[_key];
+	        }
+
+	        if (_typeof(args[0]) === '[object String]' && args[0].indexOf('-') >= 0) {
+	            args[0] = args[0].replace(/-/g, '/');
+	        }
+	        return new (Function.prototype.bind.apply(Date, [null].concat(args)))();
+	    },
 	    /**
 	     * noop
 	     */
