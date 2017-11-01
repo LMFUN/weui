@@ -18,6 +18,8 @@ import 'element-closest';
 import objectAssign from 'object-assign';
 import localStorage from './localStorage';
 import $ from 'balajs';
+import formSerialize from 'form-serialize';
+
 // 其实，$ 的原型就是一个数组，拥有数组的各种方法
 // 这里只是库内部使用，所以通过文档约束，不做容错校验，达到代码最小化
 
@@ -288,7 +290,23 @@ objectAssign($.fn, {
             $element.setAttribute('data-' + arguments[0], JSON.stringify(arguments[1]));
         });
         return this;
+    },
+    serialize: function () {
+        const form = this[0];
+        if (form) {
+            return formSerialize(form);
+        }
+        return '';
+    },
+    serializeObject: function () {
+        const form = this[0];
+        if (form) {
+            return formSerialize(form, true);
+        }
+        return {};
+
     }
+
 });
 
 objectAssign($, {

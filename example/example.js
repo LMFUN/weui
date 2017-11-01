@@ -442,9 +442,12 @@ weui.form.checkIfBlur('#form', regexp);
 
 // 表单提交
 document.querySelector('#formSubmitBtn').addEventListener('click', function () {
+    console.log('serialize',$('#form').serialize());
+    console.log('serialize As JSON',$('#form').serialize(true));
     weui.form.validate('#form', function (error) {
         console.log(error);
         if (!error) {
+
             var loading = weui.loading('提交中...');
             setTimeout(function () {
                 loading.hide();

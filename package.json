@@ -1,6 +1,6 @@
 {
   "name": "weui.js",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "description": "weui.js",
   "main": "./dist/weui.min.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "balajs": "^0.1.9",
     "element-closest": "^2.0.1",
+    "form-serialize": "^0.7.2",
     "object-assign": "^4.1.0"
   },
   "devDependencies": {
