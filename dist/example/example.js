@@ -1938,7 +1938,7 @@
 	            });
 	            return this;
 	        }
-	        return this[0].innerHTML;
+	        return this[0] && this[0].innerHTML || '';
 	    },
 	    /**
 	     *
@@ -2045,7 +2045,7 @@
 	            });
 	            return this;
 	        }
-	        return this[0].value;
+	        return this[0] && this[0].value || '';
 	    },
 	    /**
 	     *
@@ -2066,7 +2066,7 @@
 	        }
 
 	        if (typeof arguments[0] == 'string' && arguments.length < 2) {
-	            return this[0].getAttribute(arguments[0]);
+	            return this[0] && this[0].getAttribute(arguments[0]) || null;
 	        }
 
 	        this.forEach(function ($element) {
@@ -2093,7 +2093,7 @@
 	        }
 
 	        if (typeof arguments[0] == 'string' && arguments.length < 2) {
-	            return JSON.parse(this[0].getAttribute('data-' + arguments[0]));
+	            return this[0] && JSON.parse(this[0].getAttribute('data-' + arguments[0])) || null;
 	        }
 
 	        this.forEach(function ($element) {

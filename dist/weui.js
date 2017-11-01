@@ -1,5 +1,5 @@
 /*!
- * weui.js v1.1.3 (https://weui.io)
+ * weui.js v1.1.6 (https://weui.io)
  * Copyright 2017, wechat ui team
  * MIT license
  */
@@ -502,7 +502,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            });
 	            return this;
 	        }
-	        return this[0].innerHTML;
+	        return this[0] && this[0].innerHTML || '';
 	    },
 	    /**
 	     *
@@ -609,7 +609,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            });
 	            return this;
 	        }
-	        return this[0].value;
+	        return this[0] && this[0].value || '';
 	    },
 	    /**
 	     *
@@ -630,7 +630,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        if (typeof arguments[0] == 'string' && arguments.length < 2) {
-	            return this[0].getAttribute(arguments[0]);
+	            return this[0] && this[0].getAttribute(arguments[0]) || null;
 	        }
 
 	        this.forEach(function ($element) {
@@ -657,7 +657,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        if (typeof arguments[0] == 'string' && arguments.length < 2) {
-	            return JSON.parse(this[0].getAttribute('data-' + arguments[0]));
+	            return this[0] && JSON.parse(this[0].getAttribute('data-' + arguments[0])) || null;
 	        }
 
 	        this.forEach(function ($element) {

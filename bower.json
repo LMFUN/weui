@@ -1,7 +1,7 @@
 {
   "name": "lmf.weui.js",
   "description": "weui.js",
-  "main": "./dist/weui.js",
+  "main": "./dist/weui.min.js",
   "authors": [
     "wechat ui team"
   ],
@@ -14,7 +14,7 @@
     "lmf"
   ],
   "homepage": "",
-  "private": false,
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
