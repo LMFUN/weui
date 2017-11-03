@@ -71,57 +71,57 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _dialog2 = _interopRequireDefault(_dialog);
 
-	var _alert = __webpack_require__(10);
+	var _alert = __webpack_require__(12);
 
 	var _alert2 = _interopRequireDefault(_alert);
 
-	var _tips = __webpack_require__(11);
+	var _tips = __webpack_require__(13);
 
 	var _tips2 = _interopRequireDefault(_tips);
 
-	var _confirm = __webpack_require__(12);
+	var _confirm = __webpack_require__(14);
 
 	var _confirm2 = _interopRequireDefault(_confirm);
 
-	var _toast = __webpack_require__(13);
+	var _toast = __webpack_require__(15);
 
 	var _toast2 = _interopRequireDefault(_toast);
 
-	var _loading = __webpack_require__(15);
+	var _loading = __webpack_require__(17);
 
 	var _loading2 = _interopRequireDefault(_loading);
 
-	var _actionSheet = __webpack_require__(17);
+	var _actionSheet = __webpack_require__(19);
 
 	var _actionSheet2 = _interopRequireDefault(_actionSheet);
 
-	var _topTips = __webpack_require__(19);
+	var _topTips = __webpack_require__(21);
 
 	var _topTips2 = _interopRequireDefault(_topTips);
 
-	var _searchBar = __webpack_require__(21);
+	var _searchBar = __webpack_require__(23);
 
 	var _searchBar2 = _interopRequireDefault(_searchBar);
 
-	var _tab = __webpack_require__(22);
+	var _tab = __webpack_require__(24);
 
 	var _tab2 = _interopRequireDefault(_tab);
 
-	var _form = __webpack_require__(23);
+	var _form = __webpack_require__(25);
 
 	var _form2 = _interopRequireDefault(_form);
 
-	var _uploader = __webpack_require__(24);
+	var _uploader = __webpack_require__(26);
 
 	var _uploader2 = _interopRequireDefault(_uploader);
 
-	var _picker = __webpack_require__(28);
+	var _picker = __webpack_require__(30);
 
-	var _gallery = __webpack_require__(34);
+	var _gallery = __webpack_require__(36);
 
 	var _gallery2 = _interopRequireDefault(_gallery);
 
-	var _slider = __webpack_require__(36);
+	var _slider = __webpack_require__(38);
 
 	var _slider2 = _interopRequireDefault(_slider);
 
@@ -172,12 +172,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 	var _Date = window.Date;
 	_Date.now = _Date.now || function () {
 	    return new _Date().getTime();
 	};
+
 	_Date.prototype.format = function () {
 	    var fmt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'yyyy-MM-dd hh:mm:ss';
 
@@ -197,21 +196,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }return fmt;
 	};
 
-	var newDate = function newDate() {
-	    _classCallCheck(this, newDate);
-
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	        args[_key] = arguments[_key];
-	    }
-
-	    if (Object.prototype.toString.call(args[0]) === '[object String]' && args[0].indexOf('-') >= 0) {
-	        args[0] = args[0].replace(/-/g, '/');
-	    }
-	    return new (Function.prototype.bind.apply(_Date, [null].concat(args)))();
-	};
-
-	window.Date = newDate;
-
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -226,7 +210,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _dialog = __webpack_require__(9);
+	var _dialog = __webpack_require__(11);
 
 	var _dialog2 = _interopRequireDefault(_dialog);
 
@@ -357,13 +341,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                                                                                                                                                                                                                                                                *
 	                                                                                                                                                                                                                                                                                * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 	                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                * Licensed under the MIT License (the "License"); you may not use this file except in compliance
+	                                                                                                                                                                                                                                                                                * Licensed under the MIT License (the 'License'); you may not use this file except in compliance
 	                                                                                                                                                                                                                                                                                * with the License. You may obtain a copy of the License at
 	                                                                                                                                                                                                                                                                                *
 	                                                                                                                                                                                                                                                                                *       http://opensource.org/licenses/MIT
 	                                                                                                                                                                                                                                                                                *
 	                                                                                                                                                                                                                                                                                * Unless required by applicable law or agreed to in writing, software distributed under the License is
-	                                                                                                                                                                                                                                                                                * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+	                                                                                                                                                                                                                                                                                * distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
 	                                                                                                                                                                                                                                                                                * either express or implied. See the License for the specific language governing permissions and
 	                                                                                                                                                                                                                                                                                * limitations under the License.
 	                                                                                                                                                                                                                                                                                */
@@ -378,11 +362,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _localStorage2 = _interopRequireDefault(_localStorage);
 
-	var _balajs = __webpack_require__(7);
+	var _touch = __webpack_require__(7);
+
+	var _touch2 = _interopRequireDefault(_touch);
+
+	var _event = __webpack_require__(8);
+
+	var _event2 = _interopRequireDefault(_event);
+
+	var _balajs = __webpack_require__(9);
 
 	var _balajs2 = _interopRequireDefault(_balajs);
 
-	var _formSerialize = __webpack_require__(8);
+	var _formSerialize = __webpack_require__(10);
 
 	var _formSerialize2 = _interopRequireDefault(_formSerialize);
 
@@ -390,6 +382,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	// 其实，$ 的原型就是一个数组，拥有数组的各种方法
 	// 这里只是库内部使用，所以通过文档约束，不做容错校验，达到代码最小化
+
 
 	/* 判断系统 */
 	function _detect(ua) {
@@ -407,7 +400,153 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	_detect.call(_balajs2.default, navigator.userAgent);
 
+	//扩展方法
+	var REG = { phone: /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$/ };
+	function _typeof(arg) {
+	    return Object.prototype.toString.call(arg);
+	}
+	function likeArray(obj) {
+	    return typeof obj.length == 'number';
+	}
+	function isWindow(obj) {
+	    return obj != null && obj == obj.window;
+	}
+	var emptyArray = [];
+	var readyRE = /complete|loaded|interactive/;
+	(0, _objectAssign2.default)(_balajs2.default, {
+	    localStorage: _localStorage2.default,
+	    extend: _objectAssign2.default,
+	    typeof: _typeof,
+	    isArray: function isArray(array) {
+	        return _typeof(array) == '[object Array]';
+	    },
+	    isObject: function isObject(object) {
+	        return _typeof(object) == '[object Object]';
+	    },
+	    isFunction: function isFunction(object) {
+	        return _typeof(object) == '[object Function]';
+	    },
+	    isPlainObject: function isPlainObject(obj) {
+	        return _typeof(obj) == '[object Object]' && !isWindow(obj) && Object.getPrototypeOf(obj) == Object.prototype;
+	    },
+	    isPhone: function isPhone(phone) {
+	        return REG.phone.test(phone);
+	    },
+	    each: function each(elements, callback) {
+	        var i, key;
+	        if (likeArray(elements)) {
+	            for (i = 0; i < elements.length; i++) {
+	                if (callback.call(elements[i], i, elements[i]) === false) return elements;
+	            }
+	        } else {
+	            for (key in elements) {
+	                if (callback.call(elements[key], key, elements[key]) === false) return elements;
+	            }
+	        }
+
+	        return elements;
+	    },
+	    date: function date() {
+	        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	            args[_key] = arguments[_key];
+	        }
+
+	        if (_typeof(args[0]) === '[object String]' && args[0].indexOf('-') >= 0) {
+	            args[0] = args[0].replace(/-/g, '/');
+	        }
+	        return new (Function.prototype.bind.apply(Date, [null].concat(args)))();
+	    },
+	    trim: function trim(text) {
+	        return text == null ? '' : (text + '').replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+	    },
+	    /**
+	     * noop
+	     */
+	    noop: function noop() {},
+	    /**
+	     * render
+	     * 取值：<%= variable %>
+	     * 表达式：<% if {} %>
+	     * 例子：
+	     *  <div>
+	     *    <div class='weui-mask'></div>
+	     *    <div class='weui-dialog'>
+	     *    <% if(typeof title === 'string'){ %>
+	     *           <div class='weui-dialog__hd'><strong class='weui-dialog__title'><%=title%></strong></div>
+	     *    <% } %>
+	     *    <div class='weui-dialog__bd'><%=content%></div>
+	     *    <div class='weui-dialog__ft'>
+	     *    <% for(var i = 0; i < buttons.length; i++){ %>
+	     *        <a href='javascript:;' class='weui-dialog__btn weui-dialog__btn_<%=buttons[i]['type']%>'><%=buttons[i]['label']%></a>
+	     *    <% } %>
+	     *    </div>
+	     *    </div>
+	     *  </div>
+	     * A very simple template engine
+	     * @param {String} tpl
+	     * @param {Object=} data
+	     * @returns {String}
+	     */
+	    render: function render(tpl, data) {
+	        var code = 'var p=[];with(this){p.push(\'' + tpl.replace(/[\r\t\n]/g, ' ').split('<%').join('\t').split('{{').join('\t').replace(/((^|%>)[^\t]*)'/g, '$1\r').replace(/((^|}})[^\t]*)'/g, '$1\r').replace(/\t=(.*?)%>/g, '\',$1,\'').replace(/\t=(.*?)}}/g, '\',$1,\'').split('\t').join('\');').split('}}').join('p.push(\'').split('%>').join('p.push(\'').split('\r').join('\\\'') + '\');}return p.join(\'\');';
+	        return new Function(code).apply(data);
+	    },
+	    /**
+	     * getStyle 获得元素计算后的样式值
+	     * (from http://stackoverflow.com/questions/2664045/how-to-get-an-html-elements-style-values-in-javascript)
+	     */
+	    getStyle: function getStyle(el, styleProp) {
+	        var value,
+	            defaultView = (el.ownerDocument || document).defaultView;
+	        // W3C standard way:
+	        if (defaultView && defaultView.getComputedStyle) {
+	            // sanitize property name to css notation
+	            // (hypen separated words eg. font-Size)
+	            styleProp = styleProp.replace(/([A-Z])/g, '-$1').toLowerCase();
+	            return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+	        } else if (el.currentStyle) {
+	            // IE
+	            // sanitize property name to camelCase
+	            styleProp = styleProp.replace(/\-(\w)/g, function (str, letter) {
+	                return letter.toUpperCase();
+	            });
+	            value = el.currentStyle[styleProp];
+	            // convert other units to pixels on IE
+	            if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+	                return function (value) {
+	                    var oldLeft = el.style.left,
+	                        oldRsLeft = el.runtimeStyle.left;
+	                    el.runtimeStyle.left = el.currentStyle.left;
+	                    el.style.left = value || 0;
+	                    value = el.style.pixelLeft + 'px';
+	                    el.style.left = oldLeft;
+	                    el.runtimeStyle.left = oldRsLeft;
+	                    return value;
+	                }(value);
+	            }
+	            return value;
+	        }
+	    }
+	});
+
+	//扩展选择器方法
+
+
 	(0, _objectAssign2.default)(_balajs2.default.fn, {
+	    ready: function ready(callback) {
+	        // need to check if document.body exists for IE as that browser reports
+	        // document ready when it hasn't yet created the body element
+	        if (readyRE.test(document.readyState) && document.body) callback(_balajs2.default);else document.addEventListener('DOMContentLoaded', function () {
+	            callback(_balajs2.default);
+	        }, false);
+	        return this;
+	    },
+	    each: function each(callback) {
+	        emptyArray.every.call(this, function (el, idx) {
+	            return callback.call(el, idx, el) !== false;
+	        });
+	        return this;
+	    },
 	    /**
 	     * 只能是一个 HTMLElement 元素或者 HTMLElement 数组，不支持字符串
 	     * @param {Element|Element[]} $child
@@ -523,59 +662,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 	        return this;
 	    },
-	    /**
-	     *
-	     * @param eventType
-	     * @param selector
-	     * @param handler
-	     */
-	    on: function on(eventType, selector, handler) {
-	        var isDelegate = typeof selector === 'string' && typeof handler === 'function';
-	        if (!isDelegate) {
-	            handler = selector;
-	        }
-	        this.forEach(function ($element) {
-	            eventType.split(' ').forEach(function (event) {
-	                $element.addEventListener(event, function (evt) {
-	                    if (isDelegate) {
-	                        // http://caniuse.com/#search=closest
-	                        if (this.contains(evt.target.closest(selector))) {
-	                            handler.call(evt.target, evt);
-	                        }
-	                    } else {
-	                        handler.call(this, evt);
-	                    }
-	                });
-	            });
-	        });
-	        return this;
-	    },
-	    /**
-	     *
-	     * @param {String} eventType
-	     * @param {String|Function} selector
-	     * @param {Function=} handler
-	     * @returns {off}
-	     */
-	    off: function off(eventType, selector, handler) {
-	        if (typeof selector === 'function') {
-	            handler = selector;
-	            selector = null;
-	        }
 
-	        this.forEach(function ($element) {
-	            eventType.split(' ').forEach(function (event) {
-	                if (typeof selector === 'string') {
-	                    $element.querySelectorAll(selector).forEach(function ($element) {
-	                        $element.removeEventListener(event, handler);
-	                    });
-	                } else {
-	                    $element.removeEventListener(event, handler);
-	                }
-	            });
-	        });
-	        return this;
-	    },
 	    /**
 	     *
 	     * @returns {Number}
@@ -685,102 +772,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	});
 
-	var REG = { phone: /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$/ };
-	function _typeof(arg) {
-	    return Object.prototype.toString.call(arg);
-	}
-	(0, _objectAssign2.default)(_balajs2.default, {
-	    localStorage: _localStorage2.default,
-	    extend: _objectAssign2.default,
-	    typeof: _typeof,
-	    isArray: function isArray(array) {
-	        return _typeof(array) == '[object Array]';
-	    },
-	    isObject: function isObject(object) {
-	        return _typeof(object) == '[object Object]';
-	    },
-	    isPhone: function isPhone(phone) {
-	        return REG.phone.test(phone);
-	    },
-	    date: function date() {
-	        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	            args[_key] = arguments[_key];
-	        }
-
-	        if (_typeof(args[0]) === '[object String]' && args[0].indexOf('-') >= 0) {
-	            args[0] = args[0].replace(/-/g, '/');
-	        }
-	        return new (Function.prototype.bind.apply(Date, [null].concat(args)))();
-	    },
-	    /**
-	     * noop
-	     */
-	    noop: function noop() {},
-	    /**
-	     * render
-	     * 取值：<%= variable %>
-	     * 表达式：<% if {} %>
-	     * 例子：
-	     *  <div>
-	     *    <div class="weui-mask"></div>
-	     *    <div class="weui-dialog">
-	     *    <% if(typeof title === 'string'){ %>
-	     *           <div class="weui-dialog__hd"><strong class="weui-dialog__title"><%=title%></strong></div>
-	     *    <% } %>
-	     *    <div class="weui-dialog__bd"><%=content%></div>
-	     *    <div class="weui-dialog__ft">
-	     *    <% for(var i = 0; i < buttons.length; i++){ %>
-	     *        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_<%=buttons[i]['type']%>"><%=buttons[i]['label']%></a>
-	     *    <% } %>
-	     *    </div>
-	     *    </div>
-	     *  </div>
-	     * A very simple template engine
-	     * @param {String} tpl
-	     * @param {Object=} data
-	     * @returns {String}
-	     */
-	    render: function render(tpl, data) {
-	        var code = 'var p=[];with(this){p.push(\'' + tpl.replace(/[\r\t\n]/g, ' ').split('<%').join('\t').split('{{').join('\t').replace(/((^|%>)[^\t]*)'/g, '$1\r').replace(/((^|}})[^\t]*)'/g, '$1\r').replace(/\t=(.*?)%>/g, '\',$1,\'').replace(/\t=(.*?)}}/g, '\',$1,\'').split('\t').join('\');').split('}}').join('p.push(\'').split('%>').join('p.push(\'').split('\r').join('\\\'') + '\');}return p.join(\'\');';
-	        return new Function(code).apply(data);
-	    },
-	    /**
-	     * getStyle 获得元素计算后的样式值
-	     * (from http://stackoverflow.com/questions/2664045/how-to-get-an-html-elements-style-values-in-javascript)
-	     */
-	    getStyle: function getStyle(el, styleProp) {
-	        var value,
-	            defaultView = (el.ownerDocument || document).defaultView;
-	        // W3C standard way:
-	        if (defaultView && defaultView.getComputedStyle) {
-	            // sanitize property name to css notation
-	            // (hypen separated words eg. font-Size)
-	            styleProp = styleProp.replace(/([A-Z])/g, '-$1').toLowerCase();
-	            return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
-	        } else if (el.currentStyle) {
-	            // IE
-	            // sanitize property name to camelCase
-	            styleProp = styleProp.replace(/\-(\w)/g, function (str, letter) {
-	                return letter.toUpperCase();
-	            });
-	            value = el.currentStyle[styleProp];
-	            // convert other units to pixels on IE
-	            if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
-	                return function (value) {
-	                    var oldLeft = el.style.left,
-	                        oldRsLeft = el.runtimeStyle.left;
-	                    el.runtimeStyle.left = el.currentStyle.left;
-	                    el.style.left = value || 0;
-	                    value = el.style.pixelLeft + 'px';
-	                    el.style.left = oldLeft;
-	                    el.runtimeStyle.left = oldRsLeft;
-	                    return value;
-	                }(value);
-	            }
-	            return value;
-	        }
-	    }
-	});
+	// 移动端事件处理
+	_event2.default.call(_balajs2.default);
+	_touch2.default.call(_balajs2.default);
 
 	exports.default = _balajs2.default;
 	module.exports = exports['default'];
@@ -1058,6 +1052,466 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	/**
+	 * Created by andy on 2017/11/3.
+	 */
+	//     Zepto.js
+	//     (c) 2010-2015 Thomas Fuchs
+	//     Zepto.js may be freely distributed under the MIT license.
+
+	function touch() {
+	    var $ = this,
+	        touch = {},
+	        touchTimeout,
+	        tapTimeout,
+	        swipeTimeout,
+	        longTapTimeout,
+	        longTapDelay = 750,
+	        gesture;
+
+	    function swipeDirection(x1, x2, y1, y2) {
+	        return Math.abs(x1 - x2) >= Math.abs(y1 - y2) ? x1 - x2 > 0 ? 'Left' : 'Right' : y1 - y2 > 0 ? 'Up' : 'Down';
+	    }
+
+	    function longTap() {
+	        longTapTimeout = null;
+	        if (touch.last) {
+	            touch.el.trigger('longTap');
+	            touch = {};
+	        }
+	    }
+
+	    function cancelLongTap() {
+	        if (longTapTimeout) clearTimeout(longTapTimeout);
+	        longTapTimeout = null;
+	    }
+
+	    function cancelAll() {
+	        if (touchTimeout) clearTimeout(touchTimeout);
+	        if (tapTimeout) clearTimeout(tapTimeout);
+	        if (swipeTimeout) clearTimeout(swipeTimeout);
+	        if (longTapTimeout) clearTimeout(longTapTimeout);
+	        touchTimeout = tapTimeout = swipeTimeout = longTapTimeout = null;
+	        touch = {};
+	    }
+
+	    function isPrimaryTouch(event) {
+	        return (event.pointerType == 'touch' || event.pointerType == event.MSPOINTER_TYPE_TOUCH) && event.isPrimary;
+	    }
+
+	    function isPointerEventType(e, type) {
+	        return e.type == 'pointer' + type || e.type.toLowerCase() == 'mspointer' + type;
+	    }
+
+	    $(document).ready(function () {
+	        var now,
+	            delta,
+	            deltaX = 0,
+	            deltaY = 0,
+	            firstTouch,
+	            _isPointerType;
+
+	        if ('MSGesture' in window) {
+	            gesture = new MSGesture();
+	            gesture.target = document.body;
+	        }
+
+	        $(document).on('MSGestureEnd', function (e) {
+	            var swipeDirectionFromVelocity = e.velocityX > 1 ? 'Right' : e.velocityX < -1 ? 'Left' : e.velocityY > 1 ? 'Down' : e.velocityY < -1 ? 'Up' : null;
+	            if (swipeDirectionFromVelocity) {
+	                touch.el.trigger('swipe');
+	                touch.el.trigger('swipe' + swipeDirectionFromVelocity);
+	            }
+	        }).on('touchstart MSPointerDown pointerdown', function (e) {
+	            if ((_isPointerType = isPointerEventType(e, 'down')) && !isPrimaryTouch(e)) return;
+	            firstTouch = _isPointerType ? e : e.touches[0];
+	            if (e.touches && e.touches.length === 1 && touch.x2) {
+	                // Clear out touch movement data if we have it sticking around
+	                // This can occur if touchcancel doesn't fire due to preventDefault, etc.
+	                touch.x2 = undefined;
+	                touch.y2 = undefined;
+	            }
+	            now = Date.now();
+	            delta = now - (touch.last || now);
+	            touch.el = $('tagName' in firstTouch.target ? firstTouch.target : firstTouch.target.parentNode);
+
+	            touchTimeout && clearTimeout(touchTimeout);
+	            touch.x1 = firstTouch.pageX;
+	            touch.y1 = firstTouch.pageY;
+	            if (delta > 0 && delta <= 250) touch.isDoubleTap = true;
+	            touch.last = now;
+	            longTapTimeout = setTimeout(longTap, longTapDelay);
+	            // adds the current touch contact for IE gesture recognition
+	            if (gesture && _isPointerType) gesture.addPointer(e.pointerId);
+	        }).on('touchmove MSPointerMove pointermove', function (e) {
+	            if ((_isPointerType = isPointerEventType(e, 'move')) && !isPrimaryTouch(e)) return;
+	            firstTouch = _isPointerType ? e : e.touches[0];
+	            cancelLongTap();
+	            touch.x2 = firstTouch.pageX;
+	            touch.y2 = firstTouch.pageY;
+
+	            deltaX += Math.abs(touch.x1 - touch.x2);
+	            deltaY += Math.abs(touch.y1 - touch.y2);
+	        }).on('touchend MSPointerUp pointerup', function (e) {
+	            if ((_isPointerType = isPointerEventType(e, 'up')) && !isPrimaryTouch(e)) return;
+	            cancelLongTap();
+
+	            // swipe
+	            if (touch.x2 && Math.abs(touch.x1 - touch.x2) > 30 || touch.y2 && Math.abs(touch.y1 - touch.y2) > 30) swipeTimeout = setTimeout(function () {
+	                touch.el.trigger('swipe');
+	                touch.el.trigger('swipe' + swipeDirection(touch.x1, touch.x2, touch.y1, touch.y2));
+	                touch = {};
+	            }, 0);
+
+	            // normal tap
+	            else if ('last' in touch)
+	                    // don't fire tap when delta position changed by more than 30 pixels,
+	                    // for instance when moving to a point and back to origin
+	                    if (deltaX < 30 && deltaY < 30) {
+	                        // delay by one tick so we can cancel the 'tap' event if 'scroll' fires
+	                        // ('tap' fires before 'scroll')
+	                        tapTimeout = setTimeout(function () {
+
+	                            // trigger universal 'tap' with the option to cancelTouch()
+	                            // (cancelTouch cancels processing of single vs double taps for faster 'tap' response)
+	                            var event = $.Event('tap');
+	                            event.cancelTouch = cancelAll;
+
+	                            if (touch.el) touch.el.trigger(event);
+
+	                            // trigger double tap immediately
+	                            if (touch.isDoubleTap) {
+	                                if (touch.el) touch.el.trigger('doubleTap');
+	                                touch = {};
+	                            }
+
+	                            // trigger single tap after 250ms of inactivity
+	                            else {
+	                                    touchTimeout = setTimeout(function () {
+	                                        touchTimeout = null;
+	                                        if (touch.el) touch.el.trigger('singleTap');
+	                                        touch = {};
+	                                    }, 250);
+	                                }
+	                        }, 0);
+	                    } else {
+	                        touch = {};
+	                    }
+	            deltaX = deltaY = 0;
+	        })
+	        // when the browser window loses focus,
+	        // for example when a modal dialog is shown,
+	        // cancel all ongoing events
+	        .on('touchcancel MSPointerCancel pointercancel', cancelAll);
+
+	        // scrolling the window indicates intention of the user
+	        // to scroll, not tap or swipe, so cancel all ongoing events
+	        $(window).on('scroll', cancelAll);
+	    });
+	    ['swipe', 'swipeLeft', 'swipeRight', 'swipeUp', 'swipeDown', 'doubleTap', 'tap', 'singleTap', 'longTap'].forEach(function (eventName) {
+	        $.fn[eventName] = function (callback) {
+	            return this.on(eventName, callback);
+	        };
+	    });
+	}
+
+	exports.default = touch;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	/**
+	 * Created by andy on 2017/11/3.
+	 */
+	function event() {
+	    var $ = this,
+	        _zid = 1,
+	        undefined,
+	        slice = Array.prototype.slice,
+	        isFunction = $.isFunction,
+	        isString = function isString(obj) {
+	        return typeof obj == 'string';
+	    },
+	        handlers = {},
+	        specialEvents = {},
+	        focusinSupported = 'onfocusin' in window,
+	        focus = { focus: 'focusin', blur: 'focusout' },
+	        hover = { mouseenter: 'mouseover', mouseleave: 'mouseout' };
+
+	    specialEvents.click = specialEvents.mousedown = specialEvents.mouseup = specialEvents.mousemove = 'MouseEvents';
+
+	    function zid(element) {
+	        return element._zid || (element._zid = _zid++);
+	    }
+
+	    function findHandlers(element, event, fn, selector) {
+	        event = parse(event);
+	        if (event.ns) var matcher = matcherFor(event.ns);
+	        return (handlers[zid(element)] || []).filter(function (handler) {
+	            return handler && (!event.e || handler.e == event.e) && (!event.ns || matcher.test(handler.ns)) && (!fn || zid(handler.fn) === zid(fn)) && (!selector || handler.sel == selector);
+	        });
+	    }
+
+	    function parse(event) {
+	        var parts = ('' + event).split('.');
+	        return { e: parts[0], ns: parts.slice(1).sort().join(' ') };
+	    }
+
+	    function matcherFor(ns) {
+	        return new RegExp('(?:^| )' + ns.replace(' ', ' .* ?') + '(?: |$)');
+	    }
+
+	    function eventCapture(handler, captureSetting) {
+	        return handler.del && !focusinSupported && handler.e in focus || !!captureSetting;
+	    }
+
+	    function realEvent(type) {
+	        return hover[type] || focusinSupported && focus[type] || type;
+	    }
+
+	    function add(element, events, fn, data, selector, delegator, capture) {
+	        var id = zid(element),
+	            set = handlers[id] || (handlers[id] = []);
+	        events.split(/\s/).forEach(function (event) {
+	            if (event == 'ready') return $(document).ready(fn);
+	            var handler = parse(event);
+	            handler.fn = fn;
+	            handler.sel = selector;
+	            // emulate mouseenter, mouseleave
+	            if (handler.e in hover) fn = function fn(e) {
+	                var related = e.relatedTarget;
+	                if (!related || related !== this && !$.contains(this, related)) return handler.fn.apply(this, arguments);
+	            };
+	            handler.del = delegator;
+	            var callback = delegator || fn;
+	            handler.proxy = function (e) {
+	                e = compatible(e);
+	                if (e.isImmediatePropagationStopped()) return;
+	                e.data = data;
+	                var result = callback.apply(element, e._args == undefined ? [e] : [e].concat(e._args));
+	                if (result === false) e.preventDefault(), e.stopPropagation();
+	                return result;
+	            };
+	            handler.i = set.length;
+	            set.push(handler);
+	            if ('addEventListener' in element) element.addEventListener(realEvent(handler.e), handler.proxy, eventCapture(handler, capture));
+	        });
+	    }
+
+	    function remove(element, events, fn, selector, capture) {
+	        var id = zid(element);
+	        (events || '').split(/\s/).forEach(function (event) {
+	            findHandlers(element, event, fn, selector).forEach(function (handler) {
+	                delete handlers[id][handler.i];
+	                if ('removeEventListener' in element) element.removeEventListener(realEvent(handler.e), handler.proxy, eventCapture(handler, capture));
+	            });
+	        });
+	    }
+
+	    $.event = { add: add, remove: remove };
+
+	    $.proxy = function (fn, context) {
+	        var args = 2 in arguments && slice.call(arguments, 2);
+	        if (isFunction(fn)) {
+	            var proxyFn = function proxyFn() {
+	                return fn.apply(context, args ? args.concat(slice.call(arguments)) : arguments);
+	            };
+	            proxyFn._zid = zid(fn);
+	            return proxyFn;
+	        } else if (isString(context)) {
+	            if (args) {
+	                args.unshift(fn[context], fn);
+	                return $.proxy.apply(null, args);
+	            } else {
+	                return $.proxy(fn[context], fn);
+	            }
+	        } else {
+	            throw new TypeError("expected function");
+	        }
+	    };
+
+	    $.fn.bind = function (event, data, callback) {
+	        return this.on(event, data, callback);
+	    };
+	    $.fn.unbind = function (event, callback) {
+	        return this.off(event, callback);
+	    };
+	    $.fn.one = function (event, selector, data, callback) {
+	        return this.on(event, selector, data, callback, 1);
+	    };
+
+	    var returnTrue = function returnTrue() {
+	        return true;
+	    },
+	        returnFalse = function returnFalse() {
+	        return false;
+	    },
+	        ignoreProperties = /^([A-Z]|returnValue$|layer[XY]$)/,
+	        eventMethods = {
+	        preventDefault: 'isDefaultPrevented',
+	        stopImmediatePropagation: 'isImmediatePropagationStopped',
+	        stopPropagation: 'isPropagationStopped'
+	    };
+
+	    function compatible(event, source) {
+	        if (source || !event.isDefaultPrevented) {
+	            source || (source = event);
+
+	            $.each(eventMethods, function (name, predicate) {
+	                var sourceMethod = source[name];
+	                event[name] = function () {
+	                    this[predicate] = returnTrue;
+	                    return sourceMethod && sourceMethod.apply(source, arguments);
+	                };
+	                event[predicate] = returnFalse;
+	            });
+
+	            if (source.defaultPrevented !== undefined ? source.defaultPrevented : 'returnValue' in source ? source.returnValue === false : source.getPreventDefault && source.getPreventDefault()) event.isDefaultPrevented = returnTrue;
+	        }
+	        return event;
+	    }
+
+	    function createProxy(event) {
+	        var key,
+	            proxy = { originalEvent: event };
+	        for (key in event) {
+	            if (!ignoreProperties.test(key) && event[key] !== undefined) proxy[key] = event[key];
+	        }return compatible(proxy, event);
+	    }
+
+	    $.fn.delegate = function (selector, event, callback) {
+	        return this.on(event, selector, callback);
+	    };
+	    $.fn.undelegate = function (selector, event, callback) {
+	        return this.off(event, selector, callback);
+	    };
+
+	    $.fn.live = function (event, callback) {
+	        $(document.body).delegate(this.selector, event, callback);
+	        return this;
+	    };
+	    $.fn.die = function (event, callback) {
+	        $(document.body).undelegate(this.selector, event, callback);
+	        return this;
+	    };
+
+	    $.fn.on = function (event, selector, data, callback, one) {
+	        var autoRemove,
+	            delegator,
+	            $this = this;
+	        if (event && !isString(event)) {
+	            $.each(event, function (type, fn) {
+	                $this.on(type, selector, data, fn, one);
+	            });
+	            return $this;
+	        }
+
+	        if (!isString(selector) && !isFunction(callback) && callback !== false) callback = data, data = selector, selector = undefined;
+	        if (callback === undefined || data === false) callback = data, data = undefined;
+
+	        if (callback === false) callback = returnFalse;
+
+	        return $this.each(function (_, element) {
+	            if (one) autoRemove = function autoRemove(e) {
+	                remove(element, e.type, callback);
+	                return callback.apply(this, arguments);
+	            };
+
+	            if (selector) delegator = function delegator(e) {
+	                var evt,
+	                    match = $.one(e.target).closest(selector, element);
+	                if (match && match !== element) {
+	                    evt = $.extend(createProxy(e), { currentTarget: match, liveFired: element });
+	                    return (autoRemove || callback).apply(match, [evt].concat(slice.call(arguments, 1)));
+	                }
+	            };
+
+	            add(element, event, callback, data, selector, delegator || autoRemove);
+	        });
+	    };
+	    $.fn.off = function (event, selector, callback) {
+	        var $this = this;
+	        if (event && !isString(event)) {
+	            $.each(event, function (type, fn) {
+	                $this.off(type, selector, fn);
+	            });
+	            return $this;
+	        }
+
+	        if (!isString(selector) && !isFunction(callback) && callback !== false) callback = selector, selector = undefined;
+
+	        if (callback === false) callback = returnFalse;
+
+	        return $this.each(function () {
+	            remove(this, event, callback, selector);
+	        });
+	    };
+
+	    $.fn.trigger = function (event, args) {
+	        event = isString(event) || $.isPlainObject(event) ? $.Event(event) : compatible(event);
+	        event._args = args;
+	        return this.each(function () {
+	            // handle focus(), blur() by calling them directly
+	            if (event.type in focus && typeof this[event.type] == "function") this[event.type]();
+	            // items in the collection might not be DOM elements
+	            else if ('dispatchEvent' in this) this.dispatchEvent(event);else $(this).triggerHandler(event, args);
+	        });
+	    };
+
+	    // triggers event handlers on current element just as if an event occurred,
+	    // doesn't trigger an actual event, doesn't bubble
+	    $.fn.triggerHandler = function (event, args) {
+	        var e, result;
+	        this.each(function (i, element) {
+	            e = createProxy(isString(event) ? $.Event(event) : event);
+	            e._args = args;
+	            e.target = element;
+	            $.each(findHandlers(element, event.type || event), function (i, handler) {
+	                result = handler.proxy(e);
+	                if (e.isImmediatePropagationStopped()) return false;
+	            });
+	        });
+	        return result;
+	    }
+
+	    // shortcut methods for `.bind(event, fn)` for each event type
+	    ;
+	    ('focusin focusout focus blur load resize scroll unload click dblclick ' + 'mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave ' + 'change select keydown keypress keyup error').split(' ').forEach(function (event) {
+	        $.fn[event] = function (callback) {
+	            return 0 in arguments ? this.bind(event, callback) : this.trigger(event);
+	        };
+	    });
+
+	    $.Event = function (type, props) {
+	        if (!isString(type)) props = type, type = props.type;
+	        var event = document.createEvent(specialEvents[type] || 'Events'),
+	            bubbles = true;
+	        if (props) for (var name in props) {
+	            name == 'bubbles' ? bubbles = !!props[name] : event[name] = props[name];
+	        }event.initEvent(type, bubbles, true);
+	        return compatible(event);
+	    };
+	}
+
+	exports.default = event;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, $) {
@@ -1113,7 +1567,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports) {
 
 	// get successful control from form and assemble into object
@@ -1379,13 +1833,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"<%=className%>\"> <div class=weui-mask></div> <div class=\"weui-dialog <% if(isAndroid){ %> weui-skin_android <% } %>\"> <% if(title){ %> <div class=weui-dialog__hd><strong class=weui-dialog__title><%=title%></strong></div> <% } %> <div class=weui-dialog__bd><%=content%></div> <div class=weui-dialog__ft> <% for(var i = 0; i < buttons.length; i++){ %> <a href=javascript:; class=\"weui-dialog__btn weui-dialog__btn_<%=buttons[i]['type']%>\"><%=buttons[i]['label']%></a> <% } %> </div> </div> </div> ";
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1481,7 +1935,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1516,7 +1970,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1617,7 +2071,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1630,7 +2084,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _toast = __webpack_require__(14);
+	var _toast = __webpack_require__(16);
 
 	var _toast2 = _interopRequireDefault(_toast);
 
@@ -1718,13 +2172,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"<%= className %>\"> <div class=weui-mask_transparent></div> <div class=weui-toast> <i class=\"weui-icon_toast weui-icon-success-no-circle\"></i> <p class=weui-toast__content><%=content%></p> </div> </div> ";
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1737,7 +2191,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _loading = __webpack_require__(16);
+	var _loading = __webpack_require__(18);
 
 	var _loading2 = _interopRequireDefault(_loading);
 
@@ -1818,13 +2272,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"weui-loading_toast <%= className %>\"> <div class=weui-mask_transparent></div> <div class=weui-toast> <i class=\"weui-loading weui-icon_toast\"></i> <p class=weui-toast__content><%=content%></p> </div> </div> ";
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1837,7 +2291,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _actionSheet = __webpack_require__(18);
+	var _actionSheet = __webpack_require__(20);
 
 	var _actionSheet2 = _interopRequireDefault(_actionSheet);
 
@@ -1963,13 +2417,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"<% if(isAndroid){ %>weui-skin_android <% } %><%= className %>\"> <div class=weui-mask></div> <div class=weui-actionsheet> <div class=weui-actionsheet__menu> <% for(var i = 0; i < menus.length; i++){ %> <div class=weui-actionsheet__cell><%= menus[i].label %></div> <% } %> </div> <div class=weui-actionsheet__action> <% for(var j = 0; j < actions.length; j++){ %> <div class=weui-actionsheet__cell><%= actions[j].label %></div> <% } %> </div> </div> </div> ";
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1982,7 +2436,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _topTips = __webpack_require__(20);
+	var _topTips = __webpack_require__(22);
 
 	var _topTips2 = _interopRequireDefault(_topTips);
 
@@ -2083,13 +2537,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"weui-toptips weui-toptips_warn <%= className %>\" style=display:block><%= content %></div> ";
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2185,7 +2639,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2288,7 +2742,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2301,7 +2755,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _topTips = __webpack_require__(19);
+	var _topTips = __webpack_require__(21);
 
 	var _topTips2 = _interopRequireDefault(_topTips);
 
@@ -2571,7 +3025,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2584,13 +3038,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _item = __webpack_require__(25);
+	var _item = __webpack_require__(27);
 
 	var _item2 = _interopRequireDefault(_item);
 
-	var _image = __webpack_require__(26);
+	var _image = __webpack_require__(28);
 
-	var _upload = __webpack_require__(27);
+	var _upload = __webpack_require__(29);
 
 	var _upload2 = _interopRequireDefault(_upload);
 
@@ -2892,13 +3346,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports) {
 
 	module.exports = "<li class=\"weui-uploader__file weui-uploader__file_status\" data-id=\"<%= id %>\"> <div class=weui-uploader__file-content> <i class=weui-loading style=width:30px;height:30px></i> </div> </li> ";
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -3130,7 +3584,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -3235,7 +3689,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3264,21 +3718,21 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _cron = __webpack_require__(29);
+	var _cron = __webpack_require__(31);
 
 	var _cron2 = _interopRequireDefault(_cron);
 
-	__webpack_require__(30);
+	__webpack_require__(32);
 
-	var _util3 = __webpack_require__(31);
+	var _util3 = __webpack_require__(33);
 
 	var util = _interopRequireWildcard(_util3);
 
-	var _picker = __webpack_require__(32);
+	var _picker = __webpack_require__(34);
 
 	var _picker2 = _interopRequireDefault(_picker);
 
-	var _group = __webpack_require__(33);
+	var _group = __webpack_require__(35);
 
 	var _group2 = _interopRequireDefault(_group);
 
@@ -3751,7 +4205,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -3960,7 +4414,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4224,7 +4678,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -4257,19 +4711,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"<%= className %>\"> <div class=weui-mask></div> <div class=weui-picker> <div class=weui-picker__hd> <a href=javascript:; data-action=cancel class=weui-picker__action>取消</a> <a href=javascript:; data-action=select class=weui-picker__action id=weui-picker-confirm>确定</a> </div> <div class=weui-picker__bd></div> </div> </div> ";
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=weui-picker__group> <div class=weui-picker__mask></div> <div class=weui-picker__indicator></div> <div class=weui-picker__content></div> </div>";
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4282,7 +4736,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _gallery = __webpack_require__(35);
+	var _gallery = __webpack_require__(37);
 
 	var _gallery2 = _interopRequireDefault(_gallery);
 
@@ -4369,13 +4823,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"weui-gallery <%= className %>\"> <span class=weui-gallery__img style=\"background-image:url(<%= url %>)\"></span> <div class=weui-gallery__opr> <a href=javascript: class=weui-gallery__del> <i class=\"weui-icon-delete weui-icon_gallery-delete\"></i> </a> </div> </div> ";
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';

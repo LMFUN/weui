@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import './util/rewriteDate';
+import './util/ext/rewriteDate';
 import dialog from './dialog/dialog';
 import alert from './alert/alert';
 import tips from './tips/tips';

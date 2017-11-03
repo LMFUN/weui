@@ -2,6 +2,7 @@ var _Date = window.Date;
 _Date.now = _Date.now || function () {
     return (new _Date).getTime();
 };
+
 _Date.prototype.format = function (fmt = 'yyyy-MM-dd hh:mm:ss') {
     var date = this;
     var o = {
@@ -22,13 +23,3 @@ _Date.prototype.format = function (fmt = 'yyyy-MM-dd hh:mm:ss') {
                 : (('00' + o[k]).substr(('' + o[k]).length)));
     return fmt;
 };
-
-class newDate {
-    constructor(...args) {
-        if (Object.prototype.toString.call(args[0]) === '[object String]' && args[0].indexOf('-') >= 0) {
-            args[0] = args[0].replace(/-/g, '/');
-        }
-        return new _Date(...args);
-    }
-}
-window.Date = newDate;
