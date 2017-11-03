@@ -18,7 +18,7 @@ import 'element-closest';
 import objectAssign from 'object-assign';
 import localStorage from './ext/localStorage';
 import moblieTouch from './ext/touch';
-import moblieEvent from './ext/event';
+import allEvent from './ext/event';
 import $ from 'balajs';
 import formSerialize from 'form-serialize';
 
@@ -411,8 +411,9 @@ objectAssign($.fn, {
     }
 });
 
+// 事件处理
+allEvent.call($);
 // 移动端事件处理
-moblieEvent.call($);
 moblieTouch.call($);
 
 
