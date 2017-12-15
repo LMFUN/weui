@@ -54,7 +54,7 @@
         <div class="weui-navbar__item">反馈</div>
         <div class="weui-navbar__item">表单</div>
         <div class="weui-navbar__item">上传</div>
-        <div class="weui-navbar__item">iscroll</div>
+        <div class="weui-navbar__item">zepto.refresh</div>
          <div class="weui-navbar__item">其它</div>
     </div>
     <div class="weui-tab__panel">
@@ -105,21 +105,21 @@
                     </label>
                     <label class="weui-cell weui-check__label" for="c2">
                         <div class="weui-cell__hd">
-                            <input type="checkbox" name="assistance" class="weui-check" id="c2">
+                            <input type="checkbox" name="assistance[]" value="欧阳锋" class="weui-check" id="c2">
                             <i class="weui-icon-checked"></i>
                         </div>
                         <div class="weui-cell__bd">欧阳锋</div>
                     </label>
                     <label class="weui-cell weui-check__label" for="c3">
                         <div class="weui-cell__hd">
-                            <input type="checkbox" name="assistance" class="weui-check" id="c3">
+                            <input type="checkbox" name="assistance[]" value="段智兴" class="weui-check" id="c3">
                             <i class="weui-icon-checked"></i>
                         </div>
                         <div class="weui-cell__bd">段智兴</div>
                     </label>
                     <label class="weui-cell weui-check__label" for="c4">
                         <div class="weui-cell__hd">
-                            <input type="checkbox" name="assistance" class="weui-check" id="c4">
+                            <input type="checkbox" name="assistance[]" value="洪七公" class="weui-check" id="c4">
                             <i class="weui-icon-checked"></i>
                         </div>
                         <div class="weui-cell__bd">洪七公</div>
@@ -204,9 +204,61 @@
             </div>
         </div>
          <div class="weui-tab__content">
-             <div class="text-center">
-                 下拉加载
+             <style>
+
+
+                 .wrap {
+                     position: relative;
+                     overflow: hidden;
+                     background:#eee;
+                 }
+                 .content li {
+                     padding-left: 20px;
+                     line-height: 50px;
+                     border-bottom:1px solid #ddd;
+                 }
+
+
+
+             </style>
+             <div class="wrap">
+                 <div class="content" id="J_scrller">
+                     <ul>
+                         <li class="row">Row 1</li>
+                         <li class="row">Row 2</li>
+                         <li class="row">Row 3</li>
+                         <li class="row">Row 4</li>
+                         <li class="row">Row 5</li>
+                         <li class="row">Row 6</li>
+                         <li class="row">Row 7</li>
+                         <li class="row">Row 8</li>
+                         <li class="row">Row 9</li>
+                         <li class="row">Row 10</li>
+                         <li class="row">Row 11</li>
+                         <li class="row">Row 12</li>
+                         <li class="row">Row 13</li>
+                         <li class="row">Row 14</li>
+                         <li class="row">Row 15</li>
+
+                         <li class="row">Row 16</li>
+                         <li class="row">Row 17</li>
+                         <li class="row">Row 18</li>
+                         <li class="row">Row 19</li>
+                         <li class="row">Row 20</li>
+                         <li class="row">Row 21</li>
+                         <li class="row">Row 22</li>
+                         <li class="row">Row 23</li>
+                         <li class="row">Row 24</li>
+                         <li class="row">Row 25</li>
+                         <li class="row">Row 26</li>
+                         <li class="row">Row 27</li>
+                         <li class="row">Row 28</li>
+                         <li class="row">Row 29</li>
+                         <li class="row">Row 30</li>
+                     </ul>
+                 </div>
              </div>
+
          </div>
         <div class="weui-tab__content">
             <div class="item">

@@ -443,7 +443,8 @@ weui.form.checkIfBlur('#form', regexp);
 // 表单提交
 document.querySelector('#formSubmitBtn').addEventListener('click', function () {
     console.log('serialize',$('#form').serialize());
-    console.log('serialize As JSON',$('#form').serialize(true));
+    console.log('serialize As Array',$('#form').serializeArray());
+    console.log('serialize As JSON',$('#form').serializeObject());
     weui.form.validate('#form', function (error) {
         console.log(error);
         if (!error) {
@@ -606,6 +607,39 @@ document.querySelector('#uploaderCustomFiles').addEventListener('click', functio
     });
 });
 
+var totalNumber = 30;
+
+$(window).refresh({
+    contentEl: '#J_scrller',
+    // 头部的高度
+    distanceToRefresh: 40,
+    // 开启刷新
+    isRefresh: true,
+    // 开启加载更多
+    isLoadingMore: true,
+    // 触发刷新回调
+    refreshCallback: function(complete) {
+        setTimeout(function() {
+            window.location.reload();
+            complete();
+        }, 1000)
+    },
+    // 加载更多回调
+    loadingMoreCallback: function(complete) {
+        var tpl = '';
+
+        for (var i = 0; i < 10; i++) {
+            totalNumber++;
+
+            tpl += '<li class="row">Row '+ totalNumber +'</li>'
+        }
+
+        console.log(tpl);
+
+        $('#J_scrller ul').append(tpl);
+        complete('finish');
+    }
+});
 
 var data = {
     "name": "weui.js",

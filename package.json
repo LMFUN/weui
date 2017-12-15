@@ -22,10 +22,11 @@
   "author": "wechat ui team",
   "license": "MIT",
   "dependencies": {
-    "balajs": "^0.1.9",
     "element-closest": "^2.0.1",
     "form-serialize": "^0.7.2",
-    "object-assign": "^4.1.0"
+    "object-assign": "^4.1.0",
+    "zepto": "^1.2.0",
+    "zepto-touch": "^0.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
